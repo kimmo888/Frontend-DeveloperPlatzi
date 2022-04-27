@@ -87,7 +87,42 @@ body{
     margin-bottom: 20px;
     display: inline-block;
 }
-
+/* estilos del menu mobile ---------------------------------------------------------------*/
+.mobile-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 92vh;
+    padding: 24px;
+}
+.mobile-menu a{
+    text-decoration: none;
+    color: var(--Black);
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+.mobile-menu ul{
+    margin: 24px 0 0;
+    padding: 0;
+    list-style: none;
+}
+.mobile-menu ul:nth-child(1){
+    border-bottom: 1px solid var(--very-light-pink);
+}
+.mobile-menu ul li{
+    margin-bottom: 24px;
+}
+.mobile-menu .email{
+    font-size: var(--sm);
+    font-weight: 300;
+}
+.mobile-menu ul:nth-child(3) li:nth-child(1){
+    margin-bottom: 4px;
+}
+.mobile-menu .sign-out{
+    font-size: var(--sm);
+    color: var(--hospital-green);
+}
 /* los responsive design ---------------------------------------------------- */
 @media (max-width: 640px){
     .cards-container{
