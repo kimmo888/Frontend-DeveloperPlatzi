@@ -192,6 +192,111 @@ body{
     font-size: var(--md);
     font-weight: bold;
 }
+/* estilos de my orders ________________________________________________________ */
+.my-order{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.title{
+    font-size: var(--lg);
+    margin-bottom: 40px;
+}
+.my-order-container{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+}
+.my-order-content{
+    display: flex;
+    flex-direction: column;
+}
+.orders{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.orders p:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+}
+.orders p:nth-child(2) {
+    text-align: end;
+    font-weight: bold;
+}
+.orders p span:nth-child(1) {
+    font-size: var(--md);
+    font-weight: bold;
+}
+.orders p span:nth-child(2) {
+    font-size: var(--sm);
+    color: var(--very-light-pink);
+}
+ /* estilos nav bar de la app y desktop ------------------------------------------ */
+.container-menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    border-bottom: 1px solid var(--very-light-pink);
+}
+.menu{
+    display: none;
+}
+.logo{
+    width: 100px;
+}
+.navbar-left ul, .navbar-right ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+.navbar-left{
+    display: flex;
+}
+.navbar-left ul{
+    margin-left: 12px;
+}
+.navbar-left ul li a{
+    text-decoration: none;
+    color: var(--very-light-pink);
+    border: 1px solid var(--white);
+    padding: 8px;
+    border-radius: 8px;
+}
+.navbar-left ul li a:hover{
+    color: var(--hospital-green);
+    border: 1px solid var(--hospital-green);
+}
+.navbar-right ul li{
+    padding: 8px;
+}
+.navbar-email{
+    color: var(--very-light-pink);
+    font-size: var(--md);
+}
+.navbar-shopping-car{
+    position: relative;
+}
+.navbar-shopping-car div{
+    width: 16px;
+    height: 16px;
+    background-color: var(--hospital-green);
+    border-radius: 50%;
+    font-size: var(--sm);
+    font-weight: bold;
+    position: absolute;
+    top: -6px;
+    right: -3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* los responsive design ---------------------------------------------------- */
 @media (max-width: 640px){
     .cards-container{
@@ -203,5 +308,14 @@ body{
     .products-card img{
         width: 140px;
         height: 140px;
+    }
+    .menu{
+        display: block;
+    }
+    .navbar-left ul{
+        display: none;
+    }
+    .navbar-email{
+        display: none;
     }
 }
